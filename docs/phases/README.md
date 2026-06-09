@@ -20,10 +20,10 @@ mean the work is done.
 | 0 | `PHASE_00_FOUNDATION.md` | — |
 | 1 | `PHASE_01_SCAFFOLD.md` | ✅ |
 | 2 | `PHASE_02_UX_ARCHITECTURE.md` | ✅ |
-| 3 | `PHASE_03_SHELL.md` | — |
-| 4 | `PHASE_04_PERSISTENT_CANVAS.md` | — |
-| 5 | `PHASE_05_HERO_SCENE.md` | — |
-| 6 | `PHASE_06_ANIMATION.md` | — |
+| 3 | `PHASE_03_SHELL.md` | ✅ |
+| 4 | `PHASE_04_PERSISTENT_CANVAS.md` | ✅ |
+| 5 | `PHASE_05_HERO_SCENE.md` | ✅ |
+| 6 | `PHASE_06_ANIMATION.md` | ✅ |
 | 7 | `PHASE_07_CMS.md` | ✅ |
 | 8 | `PHASE_08_CONTACT_FORM.md` | — |
 | 9 | `PHASE_09_OPTIMIZATION.md` | — |
