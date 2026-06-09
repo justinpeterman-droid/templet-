@@ -1,15 +1,14 @@
-# Research
+# Research — the Project's Content & IA Brief
 
-Reference and research material that informs *what* this site is for and *how* it
-should convert — separate from the build-methodology phase docs in `docs/phases/`.
+**This is the project brief.** These documents define *what* we're building — a
+therapeutic **hypnotherapy practice website** (Hometown Serenity): its
+information architecture, conversion funnel, digital-audio e-commerce,
+trust/credibility strategy, SEO, and the US legal/compliance requirements for a
+health practice.
 
-> **Domain note:** these documents describe a **hypnotherapy practice website**
-> (information architecture, conversion funnel, e-commerce for digital audio,
-> trust/credibility, and US legal/compliance). The phase docs in this repo
-> describe a *generic* immersive portfolio + marketing build. If you intend to
-> build the hypnotherapy site using that methodology, this research is the
-> content/IA brief that feeds Phase 2 (content model, sitemap) onward. If it was
-> meant for a different repository, these files can be moved.
+It is the authoritative content/IA source-of-truth. The engineering *methodology*
+for building it lives in `docs/phases/` + `docs/00_MASTER_PROJECT.md`; this
+research is what those phases implement (it feeds Phase 2 onward).
 
 ## Contents
 

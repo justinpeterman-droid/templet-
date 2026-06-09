@@ -1,9 +1,11 @@
 # Repository Structure Standard
 
 This document is the **single source of truth for where things live** in this
-project. The Master Brief (`docs/00_MASTER_PROJECT.md`) explains *what* we are building
-and *why*; this file defines *where* each kind of file belongs and the
-conventions that keep the codebase predictable as it grows through the phases.
+project. `docs/research/` is the **content/IA brief** (*what* we are building — the
+Hometown Serenity hypnotherapy practice site); `docs/00_MASTER_PROJECT.md` is the
+**engineering brief** (the stack and the persistent-canvas idea — *how* we build);
+and this file defines *where* each kind of file belongs and the conventions that
+keep the codebase predictable as it grows through the phases.
 
 > The directory skeleton below is committed up front (with `.gitkeep` placeholders)
 > so every phase drops its output into a known location instead of inventing one.
@@ -15,7 +17,8 @@ templet-/
 ├── .cursor/
 │   └── rules                  # Cursor project rules (role, stack, architecture)
 ├── docs/                      # Project documentation
-│   ├── 00_MASTER_PROJECT.md   # The orienting brief — keep open while working
+│   ├── 00_MASTER_PROJECT.md   # Engineering brief — keep open while working
+│   ├── research/              # Content/IA brief (the hypnotherapy site spec)
 │   └── phases/                # PHASE_00 … PHASE_12 working files
 ├── public/                    # Static assets served as-is
 │   ├── models/                # glTF/Draco 3D models (lazy-loaded)
