@@ -1,7 +1,7 @@
 # Repository Structure Standard
 
 This document is the **single source of truth for where things live** in this
-project. The Master Brief (`docs/MASTER_BRIEF.md`) explains *what* we are building
+project. The Master Brief (`docs/00_MASTER_PROJECT.md`) explains *what* we are building
 and *why*; this file defines *where* each kind of file belongs and the
 conventions that keep the codebase predictable as it grows through the phases.
 
@@ -15,7 +15,7 @@ templet-/
 ├── .cursor/
 │   └── rules                  # Cursor project rules (role, stack, architecture)
 ├── docs/                      # Project documentation
-│   ├── MASTER_BRIEF.md        # The orienting brief — keep open while working
+│   ├── 00_MASTER_PROJECT.md   # The orienting brief — keep open while working
 │   └── phases/                # PHASE_00 … PHASE_12 working files
 ├── public/                    # Static assets served as-is
 │   ├── models/                # glTF/Draco 3D models (lazy-loaded)

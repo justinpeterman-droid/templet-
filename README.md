@@ -9,7 +9,7 @@ animation) while staying fast.
 
 ## Start here
 
-- **`docs/MASTER_BRIEF.md`** — the orienting brief: what we're building, the
+- **`docs/00_MASTER_PROJECT.md`** — the orienting brief: what we're building, the
   stack, and the one architectural idea that governs everything (the *persistent
   canvas*).
 - **`STRUCTURE.md`** — the repository structure standard: where every kind of
@@ -38,4 +38,4 @@ numbers from memory.
 ## Build order
 
 Work the phases in order; each assumes the previous is complete. See
-`docs/MASTER_BRIEF.md` and `docs/phases/README.md`.
+`docs/00_MASTER_PROJECT.md` and `docs/phases/README.md`.

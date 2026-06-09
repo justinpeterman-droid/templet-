@@ -1,12 +1,11 @@
 # Master Project Brief — Immersive Portfolio + Marketing Site
 
 This is the single document that orients the whole build. Keep it open while you
-work. Each phase has its own file (`PHASE_00` through `PHASE_12`) under
-`docs/phases/`; this master file explains the big picture, the stack, the core
-architecture idea, how to work with Cursor and Claude together, and the order
-everything happens in.
+work. Each phase has its own file (`PHASE_00` through `PHASE_12`); this master
+file explains the big picture, the stack, the core architecture idea, how to work
+with Cursor and Claude together, and the order everything happens in.
 
------
+---
 
 ## What you are building
 
@@ -16,7 +15,7 @@ It is fully immersive — real-time 3D and cinematic animation throughout — wh
 still loading fast and running smoothly, because performance was a design
 requirement from the first decision, not an afterthought.
 
------
+---
 
 ## The one idea that governs everything: the persistent canvas
 
@@ -34,12 +33,12 @@ This is why the site can feel immersive on every page yet still load fast. Almos
 every architectural decision in this project exists to support this pattern.
 **Phase 4 implements it. Get that phase right and everything after it is easy.**
 
------
+---
 
 ## The chosen stack (and why)
 
 | Layer | Tool | Why |
-|-------|------|-----|
+|---|---|---|
 | Framework / routing | **Next.js (App Router)** + TypeScript | True multi-page routing, excellent SEO, React underneath (what the 3D ecosystem expects) |
 | 3D | **React Three Fiber** + **drei** | Write Three.js the React way; drei provides ready-made helpers (loaders, controls, effects) |
 | Styling | **Tailwind CSS** | Fast, consistent, no context-switching to separate CSS files |
@@ -56,7 +55,7 @@ Do **not** trust any specific version number from memory. Phase 1 includes a ste
 to pin everything to the *latest stable* versions and confirm they are compatible
 with each other. That habit matters more than any single version number.
 
------
+---
 
 ## Site structure
 
@@ -71,7 +70,7 @@ world.
 4. **About** (`/about`)
 5. **Contact** (`/contact`) — the form
 
------
+---
 
 ## How to work: Cursor + Claude division of labor
 
@@ -89,19 +88,55 @@ Bring Claude four kinds of moments:
 4. **For judgment calls** — talk UX/design decisions through with Claude first,
    then take a clear instruction to Cursor.
 
------
+---
 
-## The Cursor project rules
+## The Cursor project rules (paste once, applies to every request)
 
-These live in `.cursor/rules` (paste once, applies to every request). See that
-file for the full text — role, stack, architecture rules, and working style.
+Create `.cursor/rules` (or use Settings → Rules) in your project root and paste:
 
------
+```markdown
+# Project Rules — Immersive Portfolio + Marketing Site
+
+## Role
+You are a Senior UX Architect and Senior Front-End Engineer specializing in
+immersive, performant web experiences. You write production-quality, accessible,
+well-commented code. You explain trade-offs before making non-obvious choices.
+
+## Stack (pin to latest STABLE versions; confirm compatibility before installing)
+- Next.js (App Router) + React + TypeScript
+- React Three Fiber + drei for all 3D
+- Tailwind CSS for styling
+- GSAP + ScrollTrigger for scroll-driven animation; Lenis for smooth scroll
+- Sanity for CMS content
+- react-hook-form + zod for forms; Resend for transactional email
+- Deploy target: Vercel
+
+## Architecture rules (do not violate without flagging)
+- Use ONE persistent R3F <Canvas> mounted at the app shell level. Pages declare
+  what the canvas shows via shared state/context; never mount a new Canvas per page.
+- 3D assets: use glTF with Draco compression. Lazy-load heavy models. Use
+  instancing and LOD where many objects appear. Dispose of geometries/materials
+  on unmount.
+- Animations must respect `prefers-reduced-motion` and degrade gracefully.
+- Every interactive element must be keyboard-accessible with visible focus states.
+- All images use next/image. All routes have proper metadata for SEO.
+- Target: Lighthouse performance > 85 on mobile, accessibility = 100.
+
+## Working style
+- When I describe a feature, first propose the file structure and approach in
+  plain language, wait for my OK, THEN write code.
+- Comment the WHY behind important decisions, not just the what.
+- Keep components small and single-purpose. Prefer composition over giant files.
+- If a request would hurt performance or accessibility, say so and offer an
+  alternative before proceeding.
+```
+
+---
 
 ## Phase index
 
 | Phase | File | What it produces |
-|-------|------|------------------|
+|---|---|---|
 | 0 | `PHASE_00_FOUNDATION.md` | Tools installed, Cursor configured, Git initialized |
 | 1 | `PHASE_01_SCAFFOLD.md` | Blank but correctly-wired Next.js app running locally |
 | 2 | `PHASE_02_UX_ARCHITECTURE.md` | Design tokens, content model, sitemap, a11y baseline |
@@ -116,7 +151,7 @@ file for the full text — role, stack, architecture rules, and working style.
 | 11 | `PHASE_11_DEPLOYMENT.md` | Live on Vercel with custom domain + env vars |
 | 12 | `PHASE_12_HANDOFF.md` | How to update, change safely, and maintain |
 
------
+---
 
 ## How to use the phase files
 
@@ -130,7 +165,7 @@ file for the full text — role, stack, architecture rules, and working style.
 
 Do the phases in order. Each assumes the previous one is complete.
 
------
+---
 
 ## A note on "done"
 
