@@ -19,6 +19,7 @@ templet-/
 ├── docs/                      # Project documentation
 │   ├── 00_MASTER_PROJECT.md   # Engineering brief — keep open while working
 │   ├── research/              # Content/IA brief (the hypnotherapy site spec)
+│   ├── reference/             # Third-party technical reference (e.g. repomix packs)
 │   └── phases/                # PHASE_00 … PHASE_12 working files
 ├── public/                    # Static assets served as-is
 │   ├── models/                # glTF/Draco 3D models (lazy-loaded)
@@ -75,7 +76,9 @@ templet-/
 - **Co-locate by concern, not by type, inside a feature** when a component grows
   its own styles/tests/helpers; otherwise use the shared folders above.
 - **`docs/` is the project's memory.** Decisions, the brief, and per-phase notes
-  live here so the reasoning survives across phases.
+  live here so the reasoning survives across phases. `docs/reference/` holds
+  vendored third-party technical reference (e.g. Repomix packs of starters we
+  learn from) — read-only, not our application code.
 
 ## Naming
 
