@@ -12,18 +12,21 @@ Each phase file should follow the same shape so they're predictable to work from
 - **Definition of done** — the checklist that says the phase is complete.
 - **Common pitfalls** — what tends to go wrong here.
 
-| Phase | File | Status |
-|-------|------|--------|
-| 0 | `PHASE_00_FOUNDATION.md` | not started |
-| 1 | `PHASE_01_SCAFFOLD.md` | not started |
-| 2 | `PHASE_02_UX_ARCHITECTURE.md` | not started |
-| 3 | `PHASE_03_SHELL.md` | not started |
-| 4 | `PHASE_04_PERSISTENT_CANVAS.md` | not started |
-| 5 | `PHASE_05_HERO_SCENE.md` | not started |
-| 6 | `PHASE_06_ANIMATION.md` | not started |
-| 7 | `PHASE_07_CMS.md` | not started |
-| 8 | `PHASE_08_CONTACT_FORM.md` | not started |
-| 9 | `PHASE_09_OPTIMIZATION.md` | not started |
-| 10 | `PHASE_10_SEO_ANALYTICS.md` | not started |
-| 11 | `PHASE_11_DEPLOYMENT.md` | not started |
-| 12 | `PHASE_12_HANDOFF.md` | not started |
+"Present" means the phase file has been written to this folder; it does not
+mean the work is done.
+
+| Phase | File | File present |
+|-------|------|--------------|
+| 0 | `PHASE_00_FOUNDATION.md` | — |
+| 1 | `PHASE_01_SCAFFOLD.md` | ✅ |
+| 2 | `PHASE_02_UX_ARCHITECTURE.md` | ✅ |
+| 3 | `PHASE_03_SHELL.md` | — |
+| 4 | `PHASE_04_PERSISTENT_CANVAS.md` | — |
+| 5 | `PHASE_05_HERO_SCENE.md` | — |
+| 6 | `PHASE_06_ANIMATION.md` | — |
+| 7 | `PHASE_07_CMS.md` | ✅ |
+| 8 | `PHASE_08_CONTACT_FORM.md` | — |
+| 9 | `PHASE_09_OPTIMIZATION.md` | — |
+| 10 | `PHASE_10_SEO_ANALYTICS.md` | ✅ |
+| 11 | `PHASE_11_DEPLOYMENT.md` | — |
+| 12 | `PHASE_12_HANDOFF.md` | ✅ |
