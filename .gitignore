@@ -44,3 +44,6 @@ pnpm-debug.log*
 
 # TypeScript
 *.tsbuildinfo
+
+# Prototype generated screenshots (regenerate from prototype/homepage.html)
+prototype/*.png
